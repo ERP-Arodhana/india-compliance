@@ -201,7 +201,7 @@ class GSTR3BReport(Document):
 
                     self.report_dict["itc_elg"]["itc_inelg"][1][key] += row[key]
 
-    def update_itc_reversal_from_journal_entry(self):
+    def update_itc_reversal_from_journal_entry(self):    
         journal_entry = frappe.qb.DocType("Journal Entry")
         journal_entry_account = frappe.qb.DocType("Journal Entry Account")
 
